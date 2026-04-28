@@ -2,9 +2,7 @@ import fleet from "@/assets/fleet.jpg";
 
 const regions = [
   { region: "Centro-Oeste", cities: "Brasília · Goiânia · Cuiabá · Campo Grande", coverage: "100%" },
-  { region: "Sudeste", cities: "São Paulo · Rio · BH · Vitória", coverage: "92%" },
   { region: "Sul", cities: "Curitiba · Porto Alegre · Floripa", coverage: "85%" },
-  { region: "Nordeste", cities: "Salvador · Recife · Fortaleza", coverage: "70%" },
 ];
 
 const Coverage = () => {
