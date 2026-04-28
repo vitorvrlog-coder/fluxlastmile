@@ -55,9 +55,9 @@ const Hero = () => {
         {/* Stats bar */}
         <div className="mt-20 grid grid-cols-2 gap-px bg-white/15 lg:grid-cols-4">
           {[
-            { v: "+8M", l: "Entregas/ano" },
+            { v: "500K+", l: "Entregas/ano" },
             { v: "98%", l: "On-time delivery" },
-            { v: "850+", l: "Cidades atendidas" },
+            { v: "Centro-Oeste", l: "Hub estratégico" },
             { v: "24/7", l: "Operação ativa" },
           ].map((s) => (
             <div key={s.l} className="bg-ink p-6">
