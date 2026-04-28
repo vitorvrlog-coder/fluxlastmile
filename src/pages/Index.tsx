@@ -1,16 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/flux/Header";
+import Hero from "@/components/flux/Hero";
+import Clients from "@/components/flux/Clients";
+import About from "@/components/flux/About";
+import Services from "@/components/flux/Services";
+import Solutions from "@/components/flux/Solutions";
+import Coverage from "@/components/flux/Coverage";
+import CTA from "@/components/flux/CTA";
+import Footer from "@/components/flux/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="min-h-screen bg-background">
+      <Header />
+      <Hero />
+      <Clients />
+      <About />
+      <Services />
+      <Solutions />
+      <Coverage />
+      <CTA />
+      <Footer />
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
