@@ -13,12 +13,29 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-yellow': 'var(--gradient-yellow)',
+        'gradient-dark': 'var(--gradient-dark)',
+      },
+      boxShadow: {
+        soft: 'var(--shadow-soft)',
+        yellow: 'var(--shadow-yellow)',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        ink: "hsl(var(--ink))",
+        yellow: {
+          DEFAULT: "hsl(var(--yellow))",
+          soft: "hsl(var(--yellow-soft))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
