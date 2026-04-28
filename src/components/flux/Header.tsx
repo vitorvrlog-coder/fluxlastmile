@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/flux-logo.jpg";
+import logo from "@/assets/flux-logo-clean.png";
+import logoLight from "@/assets/flux-logo-clean.png";
 
 const links = [
   { href: "#empresa", label: "A Flux" },
@@ -28,7 +29,13 @@ const Header = () => {
     >
       <div className="container-flux flex h-20 items-center justify-between">
         <a href="#top" className="flex items-center gap-2">
-          <img src={logo} alt="Flux Last Mile" className="h-10 w-auto mix-blend-multiply" />
+          <img
+            src={logo}
+            alt="Flux Last Mile"
+            className={`h-16 md:h-20 w-auto transition-all duration-300 ${
+              scrolled ? "" : "brightness-0 invert"
+            }`}
+          />
         </a>
 
         <nav className="hidden items-center gap-9 lg:flex">
