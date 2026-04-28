@@ -1,10 +1,10 @@
 import fleet from "@/assets/fleet.jpg";
 
 const regions = [
-  { region: "Sudeste", cities: "São Paulo · Rio · BH · Vitória", coverage: "100%" },
-  { region: "Sul", cities: "Curitiba · Porto Alegre · Floripa", coverage: "98%" },
-  { region: "Centro-Oeste", cities: "Brasília · Goiânia · Cuiabá", coverage: "92%" },
-  { region: "Nordeste", cities: "Salvador · Recife · Fortaleza", coverage: "85%" },
+  { region: "Centro-Oeste", cities: "Brasília · Goiânia · Cuiabá · Campo Grande", coverage: "100%" },
+  { region: "Sudeste", cities: "São Paulo · Rio · BH · Vitória", coverage: "92%" },
+  { region: "Sul", cities: "Curitiba · Porto Alegre · Floripa", coverage: "85%" },
+  { region: "Nordeste", cities: "Salvador · Recife · Fortaleza", coverage: "70%" },
 ];
 
 const Coverage = () => {
@@ -21,8 +21,9 @@ const Coverage = () => {
             </h2>
             <p className="mt-6 text-muted-foreground">
               Operação com <strong className="text-foreground">frota mista</strong> — veículos próprios
-              e parceiros agregados homologados — atendendo mais de 850 cidades com o mesmo padrão de
-              qualidade e rastreabilidade ponta a ponta.
+              e parceiros agregados homologados — com hub estratégico no{" "}
+              <strong className="text-foreground">Centro-Oeste</strong>, atendendo o coração logístico
+              do Brasil com o mesmo padrão de qualidade e rastreabilidade ponta a ponta.
             </p>
 
             <div className="mt-10 space-y-px">
@@ -57,17 +58,17 @@ const Coverage = () => {
                 <div className="grid grid-cols-3 gap-px bg-white/10">
                   <div className="bg-ink/90 p-4 backdrop-blur-sm">
                     <div className="text-[10px] uppercase tracking-[0.25em] text-accent">Veículos</div>
-                    <div className="mt-1 text-2xl font-black text-white lg:text-3xl">+450</div>
+                    <div className="mt-1 text-2xl font-black text-white lg:text-3xl">50+</div>
                     <div className="mt-1 text-[11px] text-white/60">próprios e agregados</div>
                   </div>
                   <div className="bg-ink/90 p-4 backdrop-blur-sm">
                     <div className="text-[10px] uppercase tracking-[0.25em] text-accent">Hubs</div>
-                    <div className="mt-1 text-2xl font-black text-white lg:text-3xl">12</div>
-                    <div className="mt-1 text-[11px] text-white/60">centros operacionais</div>
+                    <div className="mt-1 text-2xl font-black text-white lg:text-3xl">3</div>
+                    <div className="mt-1 text-[11px] text-white/60">base no Centro-Oeste</div>
                   </div>
                   <div className="bg-ink/90 p-4 backdrop-blur-sm">
                     <div className="text-[10px] uppercase tracking-[0.25em] text-accent">Entregadores</div>
-                    <div className="mt-1 text-2xl font-black text-white lg:text-3xl">+1.200</div>
+                    <div className="mt-1 text-2xl font-black text-white lg:text-3xl">120+</div>
                     <div className="mt-1 text-[11px] text-white/60">homologados</div>
                   </div>
                 </div>
