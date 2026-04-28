@@ -1,4 +1,4 @@
-import logo from "@/assets/flux-logo.jpg";
+import logo from "@/assets/flux-logo-clean.png";
 import { Linkedin, Instagram, Youtube } from "lucide-react";
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container-flux py-16">
         <div className="grid gap-12 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <img src={logo} alt="Flux Last Mile" className="h-12 w-auto bg-white p-1" />
+            <img src={logo} alt="Flux Last Mile" className="h-24 w-auto brightness-0 invert" />
             <p className="mt-6 max-w-sm text-sm text-white/60">
               A Flux Last Mile é a parceira logística feita para o e-commerce e varejo brasileiro.
               Tecnologia, frota e gente que respira entrega.
