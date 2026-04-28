@@ -20,8 +20,9 @@ const Coverage = () => {
               a <span className="text-accent">Flux</span> entrega.
             </h2>
             <p className="mt-6 text-muted-foreground">
-              Mais de 850 cidades atendidas com hubs próprios e parceiros homologados,
-              garantindo o mesmo padrão de qualidade em todas as regiões.
+              Operação com <strong className="text-foreground">frota mista</strong> — veículos próprios
+              e parceiros agregados homologados — atendendo mais de 850 cidades com o mesmo padrão de
+              qualidade e rastreabilidade ponta a ponta.
             </p>
 
             <div className="mt-10 space-y-px">
@@ -41,19 +42,45 @@ const Coverage = () => {
           </div>
 
           <div className="relative lg:col-span-7">
-            <div className="relative aspect-[4/3] overflow-hidden">
-              <img src={fleet} alt="Frota Flux" className="h-full w-full object-cover" loading="lazy" width={1600} height={1024} />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/60 to-transparent" />
-              <div className="absolute bottom-8 left-8 right-8 flex items-end justify-between text-white">
-                <div>
-                  <div className="text-xs uppercase tracking-[0.3em] text-accent">Frota dedicada</div>
-                  <div className="mt-2 text-3xl font-black">+2.500 veículos</div>
-                </div>
-                <div className="text-right">
-                  <div className="text-xs uppercase tracking-[0.3em] text-white/60">Hubs</div>
-                  <div className="mt-2 text-3xl font-black">38</div>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-sm shadow-soft">
+              <img src={fleet} alt="Frota Flux" className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" width={1600} height={1024} />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-transparent" />
+
+              {/* Top badge */}
+              <div className="absolute left-6 top-6 inline-flex items-center gap-2 bg-accent px-4 py-2 text-xs font-bold uppercase tracking-widest text-ink">
+                <span className="h-2 w-2 animate-pulse rounded-full bg-ink" />
+                Frota mista · própria + agregada
+              </div>
+
+              {/* Bottom info */}
+              <div className="absolute inset-x-0 bottom-0 p-6 lg:p-8">
+                <div className="grid grid-cols-3 gap-px bg-white/10">
+                  <div className="bg-ink/90 p-4 backdrop-blur-sm">
+                    <div className="text-[10px] uppercase tracking-[0.25em] text-accent">Veículos</div>
+                    <div className="mt-1 text-2xl font-black text-white lg:text-3xl">+450</div>
+                    <div className="mt-1 text-[11px] text-white/60">próprios e agregados</div>
+                  </div>
+                  <div className="bg-ink/90 p-4 backdrop-blur-sm">
+                    <div className="text-[10px] uppercase tracking-[0.25em] text-accent">Hubs</div>
+                    <div className="mt-1 text-2xl font-black text-white lg:text-3xl">12</div>
+                    <div className="mt-1 text-[11px] text-white/60">centros operacionais</div>
+                  </div>
+                  <div className="bg-ink/90 p-4 backdrop-blur-sm">
+                    <div className="text-[10px] uppercase tracking-[0.25em] text-accent">Entregadores</div>
+                    <div className="mt-1 text-2xl font-black text-white lg:text-3xl">+1.200</div>
+                    <div className="mt-1 text-[11px] text-white/60">homologados</div>
+                  </div>
                 </div>
               </div>
+
+              {/* Corner brackets */}
+              <div className="pointer-events-none absolute right-6 top-6 h-10 w-10 border-r-2 border-t-2 border-accent" />
+            </div>
+
+            {/* Side caption */}
+            <div className="mt-6 flex items-center justify-between border-t border-border pt-4 text-xs uppercase tracking-[0.25em] text-muted-foreground">
+              <span>Modelo híbrido</span>
+              <span className="text-accent">flexibilidade + escala</span>
             </div>
           </div>
         </div>
