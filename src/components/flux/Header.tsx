@@ -27,12 +27,12 @@ const Header = () => {
         scrolled ? "bg-background/95 backdrop-blur-md shadow-soft" : "bg-transparent"
       }`}
     >
-      <div className="container-flux flex h-20 items-center justify-between">
+      <div className="container-flux flex h-24 lg:h-28 items-center justify-between">
         <a href="#top" className="flex items-center gap-2">
           <img
             src={logo}
             alt="Flux Last Mile"
-            className={`h-16 md:h-20 w-auto transition-all duration-300 ${
+            className={`h-20 md:h-24 lg:h-28 w-auto transition-all duration-300 ${
               scrolled ? "" : "brightness-0 invert"
             }`}
           />
