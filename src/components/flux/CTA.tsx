@@ -39,7 +39,7 @@ const CTA = () => {
 
           <div className="mt-10 space-y-2 text-ink/80">
             <div><span className="font-bold text-ink">Comercial:</span> comercial@fluxlastmile.com.br</div>
-            <div><span className="font-bold text-ink">Operação:</span> +55 11 4000-0000</div>
+            <div><span className="font-bold text-ink">Operação:</span> +55 47 98870-4724</div>
             <div><span className="font-bold text-ink">Sede:</span> São Paulo · SP</div>
           </div>
         </div>
