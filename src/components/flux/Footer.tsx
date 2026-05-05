@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="text-xs uppercase tracking-widest text-accent">Contato</div>
             <ul className="mt-4 space-y-2 text-sm text-white/70">
               <li>comercial@fluxlastmile.com.br</li>
-              <li>+55 11 4000-0000</li>
+              <li>+55 47 98870-4724</li>
               <li>São Paulo · SP · Brasil</li>
             </ul>
             <div className="mt-6 flex gap-3">
